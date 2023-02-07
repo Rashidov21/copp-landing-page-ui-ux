@@ -1,0 +1,147 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    transition: all 0.3s ease-in-out;
+    font-family: var(--my-font);
+}
+html{
+    overflow-x: hidden;
+}
+a{
+    color: #1D242B;
+}
+body{
+    background-color: var(--bg-color);
+   
+}
+img{
+    max-width: 100%;
+}
+section{
+    margin: 30px auto;
+}
+.container{
+    max-width: 1200px;
+    padding: 0 5%;
+    margin: 0 auto;
+}
+nav .navbar{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content:space-between ;
+    align-items: center;
+}
+
+div.logo a{
+    font-size: 26px;
+    font-weight: 900;
+    color: #c8bebe;
+}
+div.logo a:hover{
+    color: #8f8585;
+}
+li .navbar li a{
+    font-size: 21px;
+    color: #1D242B;
+}
+
+ul.navbar li, .icon{
+    margin: 0 10px;
+}
+.navbar li a.active{
+    font-weight: 700;
+}
+
+nav .mobile-navbar{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content:space-between ;
+    align-items: center;
+    display: none;
+}
+
+.mobile-menu{
+    width: 100%;
+    height: 700px;
+    display: flex;
+    align-items: flex-end;
+    display: none;
+}
+.menu-items{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.menu-item:nth-child(1) div{
+    font-size: 21px;
+    color: #1D242B;
+    margin: 10px 0;
+}
+.active{
+    display: block;
+}
+
+.icon img:hover{
+    transform: scale(1.2);
+}
+
+/* BANNER AREA  */
+.banner{
+    display: flex;
+    align-items: center;
+}
+.banner-text{
+    max-width: 400px;
+}
+.banner-title{
+    font-size: var(--title-text-size);
+    color: var(--text-color);
+    font-weight: 900;
+    line-height: 40px;
+}
+.banner-description{
+    font-size: var(--product-text-size);
+    color: var(--text-color);
+}
+.btn{
+    padding: 10px 30px;
+    border-radius: 50px;
+    background-color: var(--text-color);
+    color:#fff;
+}
+/* PRODUCTS AREA  */
+.section-title{
+    font-size: 40px;
+    padding: 20px 0;
+}
+.products{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.product{
+    background-color: #fff;
+    max-width: 300px;
+    border-radius: 20px;
+    padding: 10px 25px;
+}
+.product:hover{
+    box-shadow: 9px 16px 26px -3px rgba(0,0,0,0.1);
+}
+
+.product-title{
+    font-size: var(--product-text-size);
+}
+.product-price{
+    font-size: var(--product-text-size);
+    color: var(--text-muted-color);
+}
